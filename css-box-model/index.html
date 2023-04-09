@@ -31,11 +31,25 @@
             margin-bottom: 50px;
             margin-left: 50px; */
             margin: 50px;
-            
-            
-            
-            
+        
         }
+        /* link before clicked on */
+        a:link{
+            color: yellowgreen
+        }
+        /* link after clicked on */
+        a:visited{
+            color: red;
+        }
+        /* link while hovering on */
+        a:hover{
+            color: blue;
+        }
+        /* link while chicking on */
+        a:active{
+            color: aqua;
+        }
+        
     </style>
 </head>
 <body>
@@ -43,5 +57,11 @@
         <h1>Box Model</h1>
         <div class="box">BOX</div>
     </div>
+    <hr>
+    
+    <h1>Pseudo Classes</h1>
+    <a href="https://twitter.com">Unvisited link</a>
+    <br>
+    <a href="https://youtube.com">Visited link</a>
 </body>
 </html>
