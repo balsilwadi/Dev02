@@ -49,7 +49,31 @@
         a:active{
             color: aqua;
         }
-        
+        :root{
+            background-color: beige;
+        }
+
+        ul li:first-child{
+            background-color: aqua;
+        }
+        ul li:last-child{
+            background-color: purple;
+        }
+        ul li:nth-child(4){
+            background-color: brown;
+        }
+        span::before{
+            content: "Hello";
+        }
+
+        #lorem::first-line {
+        color: red;
+      }
+
+      #lorem::first-letter {
+        /* color: red; */
+        font-size: 36px;
+      }
     </style>
 </head>
 <body>
@@ -59,9 +83,31 @@
     </div>
     <hr>
     
-    <h1>Pseudo Classes</h1>
-    <a href="https://twitter.com">Unvisited link</a>
-    <br>
-    <a href="https://youtube.com">Visited link</a>
+    <div>
+        <h1>Pseudo Classes</h1>
+        <a href="https://twitter.com">Unvisited link</a>
+        <br>
+        <a href="https://youtube.com">Visited link</a>
+    </div>
+
+    <div>
+        <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+            <li>E</li>
+        </ul>
+    </div>
+    <div>
+        <h1>Pseudo Elemetns</h1>
+        <span>World</span>
+        <hr>
+
+        <div id="lorem">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptates exercitationem quisquam, harum odio voluptatum maxime ad, modi beatae ipsam nam adipisci vel delectus. Expedita doloribus consequatur architecto distinctio repellendus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptates exercitationem quisquam, harum odio voluptatum maxime ad, modi beatae ipsam nam adipisci vel delectus. Expedita doloribus consequatur architecto distinctio repellendus.
+        </div>
+    </div>
 </body>
 </html>
