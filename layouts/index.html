@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: aqua;
+            /* display inline makes elemet inline 
+            display: inline;*/
+
+            /* visibility hidden creates the placeholder for the element but does not display it
+            visibility: hidden; */
+
+            /* removes the placeholder of the element
+             display: none; */
+        }
+        p{
+            background-color: rgb(119, 0, 255);
+        }
+        div{
+            background-color: rgb(255, 0, 76);
+        }
+        span{
+            background-color: rgb(123, 255, 0);
+            /* 
+            span elements cannot change the width or size unless you change display to inline block
+            display:inline-block;
+            width: 100%; */
+           
+        }
+    </style>
+</head>
+<body>
+    <!-- block elements - meaning the placholder is the whole line -->
+    <!-- H1 is a block element that has some margins -->
+    <h1>Layouts</h1>
+    <!-- p is a block element that has some margins -->
+    <p>this is a p </p>
+    <!-- div is a block elemeent that does not have any margins -->
+    <div>this is a div</div>
+    <!-- inline element - placeholder is only itself -->
+    <span>this is a span</span>
+</body>
+</html>
