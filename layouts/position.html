@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            /* defult 
+            position: static;
+            */
+
+            /*
+             positioned reletive to its initial postition using left, right, top bottom
+            position: relative;
+            left: 100px;
+            right: 100px;
+            */
+        }
+        .box{
+            height: 500px;
+            width: 500px;
+            border: 1px solid;
+            position: relative;
+        }
+        .box>p{
+
+            position: absolute;
+            right: 0;
+        }
+        .fixed{
+            border: 1px solid;
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            /* fixed poition makes element move with the page */
+            position: fixed;
+        }
+        .sticky{
+            /* makes element stick to the page while scrolling past */
+            position: sticky;
+            top: 0
+        }
+    </style>
+
+</head>
+<body>
+    <h1>positioning</h1>
+    
+    
+    <div class="box">
+        <p>Absolute text</p>
+    </div>
+    <div class="fixed">fixed box</div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <div class="sticky"><img src="data:image/jpeg;base64,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" alt=""></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, qui illum itaque sunt adipisci assumenda sequi nam aspernatur. Rem tempore, tenetur obcaecati nisi temporibus ipsum totam possimus iste deleniti ab.</p>
+</body>
+</html>
