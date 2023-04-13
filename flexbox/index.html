@@ -6,7 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<style>
+    @media(min-width:468px){
+        .container{
+        display: flex;
+        /* 
+        align-items: stretch;    ->  defult
+        align-items: flex-start; ->  minimizes the border and aligning to the top
+        align-items: flex-end;   ->  minimizes the border and aligning to the bottom
+        align-items: center;     ->  minimizes the border and aligning to the center
+        flex-direction: column;  ->  returns boxes to block elements
+        */
+        
+    }
+    .container-2{
+        display: flex;
+        /* 
+        justify-content: flex-start;    -> defult
+        justify-content: flex-end;      -> align to the right
+        justify-content: space-around;  -> aligns space around each element to make it centered evenly
+        justify-content: space-between; -> same as above rather no margin space
+        */
+        justify-content: space-between;
+    }
+    }
     
+    .container div, .container-2 div{
+        border: solid 1px grey;
+        padding: 10px;
+    }
+    .box-1{
+        flex: 2;
+        order: 2;
+    }
+    .box-2{
+        flex: 1;
+        order: 1;
+    }
+    .box-3{
+        flex: 1;
+        order: 3;
+
+    }
+
+     
+    .container-2-box{
+
+        flex-basis: 20%;
+        /* flex-basis is the width of flexbox */
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box-1">
+            <h3>Box One</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box-2">
+            <h3>Box Two</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box-3">
+            <h3>Box Three</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+
+    <div class="container-2">
+        <div class="container-2-box">
+            <h3>Box One</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa libero itaque omnis expedita est voluptatum iure tempora quibusdam, sed alias fugit explicabo voluptatem autem animi necessitatibus! Dolorum, corporis numquam!</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box Two</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa libero itaque omnis expedita est voluptatum iure tempora quibusdam, sed alias fugit explicabo voluptatem autem animi necessitatibus! Dolorum, corporis numquam!</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box Three</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, culpa libero itaque omnis expedita est voluptatum iure tempora quibusdam, sed alias fugit explicabo voluptatem autem animi necessitatibus! Dolorum, corporis numquam!</p>
+        </div>
+    </div>
 </body>
 </html>
