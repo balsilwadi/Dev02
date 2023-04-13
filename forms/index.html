@@ -5,9 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        :root{
+            
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+            margin-left: 25%;
+            width: 50%;
+            border: solid 1px;
+            padding: 5px;
+            
+        }
+        div{
+            padding: 5px;
+        }
+        input[type='text'],
+        input[type='email'],
+        input[type='password'],
+        input[type='number']{
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
     <h1>Forms</h1>
-    <form action=""></form>
+    <form>
+    <div>
+        <label for="fname">Name</label>
+        <input type="text" id="fname-input"placeholder="Name" required pattern="[a-zA-Z]{2,}">
+    </div>
+
+    <div>
+        <label for="email">Email</label>
+        <input type="email" id="email-input"placeholder="Email" required>
+    </div>
+
+    <div>
+        <label for="password">Password</label>
+        <input type="password" id="pass-input"placeholder="Password">
+    </div>
+
+    <div>
+        <label for="age">Age</label>
+        <input type="number" id="age-input" min="18" max="90">
+    </div>
+
+    <div>
+        <p>Favorite color:</p>
+        <label for="question">Yellow</label>
+        <input type="checkbox" id="input-yellow">
+
+        <label for="question">Red</label>
+        <input type="checkbox" id="input-red">
+    </div>
+    <div>
+        <label for="chooseColor">Choose your color:</label>
+        <input type="color">
+    </div>
+
+    <div>
+        <label for="DOB">Your DOB?</label>
+        <input type="date" min="04-01-2004">
+    </div>
+
+    <div>
+        <label for="resume">Upload Resume:</label>
+        <input type="file">
+    </div>
+
+    <div>
+        <p>Gender:</p>
+        <label for="male">Male</label>
+        <input type="radio" id="gender-male" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id="gender-famale" name="gender">
+    </div>
+
+    <div>
+        <textarea cols="30" rows="10" placeholder="Any Questions?"></textarea>
+    </div>
+    <div>
+        <label for="products">Products:</label>
+        <select name="" id="">
+            <option>option 1</option>
+            <option>option 2</option>
+            <option>option 3</option>
+        </select>
+    </div>
+    <div>
+        <input type="submit" style="margin-left: 40%;">
+    </div>
+
+</form>
 </body>
 </html>
