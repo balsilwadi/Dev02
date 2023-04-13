@@ -6,18 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic tables</title>
     <style>
+        tr{
+            /* border: solid; -> does not work woith tr */
+        }
         table{
-            border: solid;
+            border: solid rgb(21, 24, 206);
+            padding: 5px;
+            margin: 20px;
+            width: 400px;
+            background-color: blanchedalmond;
+            border-collapse: collapse;
+            border-style: double;
+            
+            /* border-spacing: 10px; -> has no effect becuse of border collapse */
         }
         th{
             border: solid;
+            background-color: red;
         }
         td{
             border: solid;
+            text-align: center;
+            
+        
         }
-        thead{
-            background-color: rgb(243, 63, 63);
-        }
+
+        
 
     </style>
 </head>
@@ -26,26 +40,88 @@
     
     <table>
 
+        <!-- table head -->
         <thead>
+            <!-- table row -->
             <tr>
+                <!-- table header -->
                 <th>Country</th>
                 <th>Population</th>
+            </tr>
+        </thead>
+        <!-- table body -->
+        <tbody>
+            <tr>
+                <!-- table data -->
+                <td>USA</td>
+                <td>at least 1</td>
+            </tr>
+        </tbody>
+        <!-- table footer -->
+        <tfoot>
+            <tr>
+                <td>Nigeria</td>
+                <td>at least 2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <h2>Colspan table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th colspan="2">Price USD/CAD</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <td>USA</td>
-                <th>at least 1</th>
+                <td>Chair</td>
+                <td>$30</td>
+                <td>40 CAD</td>
+            </tr>
+            <tr>
+                <td>Table</td>
+                <td>$100</td>
+                <td>134 CAD</td>
+            </tr>
+            <tr>
+                <td>Sofa</td>
+                <td>$500</td>
+                <td>672 CAD</td>
             </tr>
         </tbody>
-
-        <tfoot>
-            <tr>
-                <td>Nigeria</td>
-                <th>at least 2</th>
-            </tr>
-        </tfoot>
     </table>
+
+    <h2>Verticle table row span</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <td>Chair</td>
+                <td>Table</td>
+                <td>Sofa</td>
+                
+            </tr>
+        </thead>
+    <tbody>
+        <tr>
+            <th rowspan="2">Price USD/CAD</th>
+            <td>$30</td>
+            <td>$100</td>
+            <td>$500</td>
+        </tr>
+        <tr>
+            <td>40 CAD</td>
+            <td>134 CAD</td>
+            <td>672 CAD</td>
+            
+        </tr>
+        
+    </tbody>
+
+</table>
 </body>
 </html>
