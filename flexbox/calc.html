@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: black;
+            
+            width: 50%;
+            
+            text-align:right ;
+            font-size: large;
+        }
+        .items{
+            text-align: center;
+            
+        }
+        .left-side{
+            display: flex;
+            flex-direction: column;
+            
+             
+        }
+      .left-side>div{
+        display: flex;
+      }
+      
+      div{
+        
+      }
+      .first-row .item1, .last-row .item1{
+        border: 1px solid;
+        flex:66%
+      }
+      .first-row .item2, .last-row .item2{
+        border: 1px solid;
+        flex:33%
+      }
+      .num-row .item{
+        border: 1px solid;
+        flex:33%
+      }
+
+      .right-side{
+        display: flex;
+        flex-direction: column;
+        
+        
+      }
+      .right-side .item{
+        flex: 20%;
+      }
+      .right-side .equals{
+        flex: 40%;
+      }
+      .num{
+        background-color: orange;
+      }
+      .ac{
+        background-color: rgb(219, 72, 97);
+      }
+      .sim{
+        background-color: gray;
+      }
+      .equals{
+        background-color: rgb(50, 139, 216);
+      }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+       <span style="color:white">0</span> 
+        <div class="items">
+        <div class="left-side">
+            <div class="first-row">
+                <div class="item1 ac">AC</div>
+                <div class="item2 sim">/</div>
+                <div class="item2 sim">x</div>
+            </div>
+            <div class="num-row">
+                <div class="item num">7</div>
+                <div class="item num">8</div>
+                <div class="item num">9</div>
+                <div class="item sim">-</div>
+            </div>
+            <div class="num-row">
+                <div class="item num">4</div>
+                <div class="item num">5</div>
+                <div class="item num">6</div>
+                <div class="item sim">+</div>
+            </div>
+            <div class="num-row"> 
+                <div class="item num">1</div>
+                <div class="item num">2</div>
+                <div class="item num">3</div>
+                <div class="item equals">=</div>
+            </div>
+            <div class="last-row">
+                <div class="item1 num">0</div>
+                <div class="item2 num">.</div>
+                <div class="item2 equals">=</div>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -9,6 +9,7 @@
 <style>
     @media(min-width:468px){
         .container{
+    
         display: flex;
         /* 
         align-items: stretch;    ->  defult
@@ -17,17 +18,34 @@
         align-items: center;     ->  minimizes the border and aligning to the center
         flex-direction: column;  ->  returns boxes to block elements
         */
+        flex-direction:row-reverse;
+        align-self: flex-end;
+        /* 
+        using the flex-wrap property, which accepts the following values:
+
+        nowrap: Every item is fit to a single line.
+        wrap: Items wrap around to additional lines.
+        wrap-reverse: Items wrap around to additional lines in reverse. */
         
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        flex-flow: column;
     }
     .container-2{
         display: flex;
         /* 
-        justify-content: flex-start;    -> defult
+        align-items: flex-start;    -> defult
         justify-content: flex-end;      -> align to the right
         justify-content: space-around;  -> aligns space around each element to make it centered evenly
         justify-content: space-between; -> same as above rather no margin space
         */
         justify-content: space-between;
+        justify-content:flex-start;
+        justify-content: center;
+
+        
+        
+        
     }
     }
     
@@ -38,6 +56,7 @@
     .box-1{
         flex: 2;
         order: 2;
+        
     }
     .box-2{
         flex: 1;
@@ -49,7 +68,7 @@
 
     }
 
-     
+
     .container-2-box{
 
         flex-basis: 20%;
