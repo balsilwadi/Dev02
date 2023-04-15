@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .first-half{
+            width: 55%;
+            /* float: left; */
+            margin: 0;
+            padding: 50px;
+        }
+        .second-half{
+            width: 40%;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            /* float: right; */ 
+        }
+        .icons span{
+            padding: 5px;
+        }
+        h1{
+            font-size: 50px;
+        }
+        .first-half{
+            text-align: center;
+            
+        }
+        .icons{
+            margin-bottom: 20px;
+        }
+        .text{
+            padding: 10px;
+            
+        }
+        .text input{
+            padding-left: 20px;
+            width: 50%;
+            height: 50px;
+            border-radius: 10px;
+            border-color: rgba(160, 157, 157, 0.256);
+            background-color: rgba(160, 157, 157, 0.256); 
+        }
+        .checkbox{
+            padding: 20px;
+            
+        }
+        button{
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            margin: 20px 5px;
+        }
+        .signup{
+            background-color: rgba(0, 64, 255, 0.701);
+            color: white;
+        }
+        .signin{
+            border-color: rgba(0, 64, 255, 0.701);
+            background-color: white;
+            color: rgba(0, 64, 255, 0.701);
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="first-half">
+            <h1>Crate Account</h1>
+           <div class="icons">
+                <span><img src="google.png" alt="ddd" width="35px"></span> 
+                <span><img src="google.png" alt="ddd" width="35px"></span> 
+                <span><img src="google.png" alt="ddd" width="35px"></span> 
+                <span><img src="google.png" alt="ddd" width="35px"></span> 
+            </div>
+        
+            <div class="email-login">
+                <p>or use your email for registration:</p>
+                <form>
+                <div class="input-boxes">
+                    <div class="text">
+                        <input type="text" id="fname-input"placeholder="Name" required pattern="[a-zA-Z]{2,}">
+                    </div>
+                
+                    <div class="text">
+                        <input type="email" id="email-input"placeholder="Email" required>
+                    </div>
+                
+                    <div class="text">
+                        <input type="password" id="pass-input"placeholder="Password">
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="input-red">
+                        <label for="question">I agree to the Terms and Privacy Policy</label>
+                    </div>
+                    <div>
+                        <button class="signup"><strong>Sign Up</strong></button>
+                        <button class="signin"><strong>Sign In</strong></button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+        <div class="second-half">
+            <img src="https://wallpapershome.com/images/pages/pic_v/17861.jpg" alt="img" height="955px" width="100%">
+        </div>
+        
+    </div>
+</body>
+</html>
