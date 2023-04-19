@@ -8,6 +8,7 @@
     <style>
         body{
             background-color: gray;
+            font-family: 'Courier New', Courier, monospace;
             
         }
         div{
@@ -15,6 +16,11 @@
            
             
             
+        }
+        h1{
+            color: grey;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 300;
         }
         .main-container{
             display: flex;
@@ -70,8 +76,26 @@
                 .top-right{
                     background-color: white;
                     border: 5px solid gray;
-                    margin-left: 5px;
+                    padding-top: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
                 }
+                    .photobox-right{
+                                background-color: white;
+                                flex-basis: 34%;
+                                display: flex;
+                                flex-direction: column;
+                                padding: 5px;
+                                align-items: center;
+                            }
+                            
+                    .photobox-right p{
+                        font-size: x-large;
+                    }
+                    .top-right>div, .top-right>h1{
+                        padding-left: 10px;
+                    }
 
 
             .bottom{
@@ -87,6 +111,15 @@
 
                     background-color: rgb(255, 255, 255);
                     flex-basis: 50%;
+                }
+                .products{
+                    display:flex;
+                }
+                .showmore{
+                    margin: 5px;
+                    color: gray;
+                    text-align: center;
+                    font-size: x-large;
                 }
     </style>
 </head>
@@ -125,7 +158,18 @@
                     </div>
                 </div>
             </div>
-            <div class="top-right">laptop</div>
+            <div class="top-right">
+                <div class="photobox-right">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-Surface-Laptop-Studio-RWNvVR?fmt=png-alpha&scl=1" alt="" width="50%">
+                    <p><img src="authentic.png" alt=""width=20px> Certitified Refurbished <br><span style="color: grey;">Two-year warranty included</span> </p>
+                </div>
+                <h1>CONCORD MARINER 14k Yellow Gold Date Thin Quartz Men's Watch 77.6...</h1>
+                <div class="price">
+                    <p style="font-size: 30px;"><strong>$11,999.00</strong></p>
+                    <p style="font-size: 25px;"><strong><s> $12,499.00 </s>| 4% OFF</strong></p>
+                    <p style="color: rgba(128, 128, 128, 0.848); font-size: larger;">Free shipping</p>
+                </div>
+            </div>
         </div>
         <div class="bottom">
             <div class="concord">
@@ -143,7 +187,22 @@
                     <p style="color: red; font-size: 25px; visibility: hidden;"><strong>Almost gone</strong></p>
                 </div>
             </div>
-            <div class="show-more">showmore</div>
+            <div class="show-more">
+                <div class="products">
+                    <img src="concord.png" alt="" width="25%">
+                    <img src="concord.png" alt="" width="25%">
+                    <img src="concord.png" alt="" width="25%">
+                    <img src="concord.png" alt="" width="25%">
+                </div>
+                <div class="showmore">
+                    <h3 style="margin: 0;">Show <span style="font-size: xx-large; color: rgb(0, 87, 186);">85</span>  more</h3>
+                    <p style="margin: 0;">We Heart These Deals</p>
+                    <div class="arrow">
+                        <img src="arrow.png" alt="" width="50px">
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </div>
 </body>
