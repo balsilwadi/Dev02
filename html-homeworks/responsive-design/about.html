@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    header{
+        background-color: rgba(128, 128, 128, 0.408);
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding: 0 2%;
+        position: relative;
+    }
+    h1{
+        padding:  15px;
+        background-color: rgb(108, 224, 224);
+        margin: 0;
+    }
+    
+    a{
+        margin: 10px;
+        color: gray;
+    }
+    a:hover{
+         font-weight: 900;
+    }
+
+    
+
+    .content{
+        background-color: rgba(128, 128, 128, 0.409);
+        width: 60%;
+        margin: 2%;
+        padding: 1%;
+        
+        
+        
+    }
+    
+    img{
+        
+        float: left;
+        margin-right: 10px;
+        width: 150px;
+    }
+    
+    .content>p{
+        font-size: larger;
+        line-height: 2 ;
+    }
+    footer{
+        background-color: rgb(108, 224, 224);
+        margin-top: 20%;
+        float:inline-end;
+    }
+    footer div{
+        text-align: center;
+        padding:50px;
+        background-color: gray;
+        
+    }
+    @media screen and (max-width: 980px ){
+        img{
+        float: left;
+        margin-right: 10px;
+        width: 250px;
+    }
+    .content{
+        background-color: rgba(128, 128, 128, 0.409);
+        width: 95%;
+        
+       
+        
+    }
+    }
+
+    @media screen and (max-width: 768px ){
+        img{
+        
+        
+        width: 100%;
+    }
+    .content{
+        background-color: rgba(128, 128, 128, 0.409);
+        width: 95%;
+        
+       
+        
+    }
+
+    header{
+        background-color: rgba(128, 128, 128, 0.408);
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+        padding: 0 2%;
+        position: relative;
+    }
+    h1{
+        width: 100%;
+        text-align: center;
+        padding:  15px;
+        background-color: rgb(108, 224, 224);
+        margin: 0;
+    }
+    
+    a{
+        margin: 10px;
+        color: gray;
+    }
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bilal Alsilwadi</h1>
+             <div class="nav">
+                     <p><a href="">About</a><span> | </span><a href="">Protfolio</a><span> | </span><a href="">Contact</a></p> 
+             </div>
+         </header>
+ 
+        
+             <div class="content">
+                 <h2>About Me</h2>
+                 <hr>
+                 
+                 <img src="https://media.licdn.com/dms/image/C5603AQGoWdpmVGT_wQ/profile-displayphoto-shrink_800_800/0/1651848055402?e=2147483647&v=beta&t=CEOgG11R6AlGOo660o6kawqBxY8r0Y9BS7DrSYWHjyI" alt="">
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint modi facilis fuga itaque facere nostrum omnis, debitis incidunt ut cum magni velit accusantium ad in quisquam fugiat dicta deserunt asperiores?</p>
+                 <p class="right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque beatae repellat minus laudantium modi repudiandae eum suscipit nostrum sapiente, distinctio fuga inventore possimus, aliquid itaque explicabo, odit accusamus culpa necessitatibus.</p>
+             </div>
+         
+         
+         <footer>
+            <div>
+                Copyright
+
+            </div>
+        </footer>
+    </div>
+        
+</body>
+</html>
