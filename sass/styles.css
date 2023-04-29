@@ -1,0 +1,13 @@
+h1{
+    color: rgba(211, 2, 2, 0.853);
+}
+
+ul{
+ display: flex;
+ justify-content: space-around;
+ background-color: gray;
+ padding: 5px;
+}
+li{
+    list-style: none;
+}

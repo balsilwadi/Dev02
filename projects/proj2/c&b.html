@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            margin: 0;
+            
+        }
+        .above-header{
+            background-color: rgba(128, 128, 128, 0.23);
+            width: 100%;
+            height: 45px;
+        }
+        .icons{
+            display: flex;
+            
+            justify-content: space-around;
+            
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 50px;
+        }
+        .icons div{
+            margin: 10px 20px;
+        }
+        input{
+            width: 150%;
+            height: 30px;
+            padding: 3px;
+            padding-left: 10px;
+        }
+        .logo{
+            margin-left: 80px;
+        }
+        .upper-nav a{
+            margin: 10px;
+            color: rgba(49, 48, 48, 0.603);
+            text-decoration: none;
+            
+        }
+        
+        .upper-nav a:hover{
+            text-decoration:underline;
+
+        }
+        .upper-nav p{
+            text-align: center;
+            font-size: smaller;
+        }
+        
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            font-size: smaller;
+            
+            margin:30px 300px;
+        }
+        nav a{
+            color: black;
+            text-decoration: none;
+            
+
+        }
+        nav a:hover{
+            
+            text-decoration:underline;
+
+        }
+        .add{
+            background-color: rgba(0, 0, 0, 0.867);
+            color: white;
+            height: 75px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            
+            
+        }
+        .add p{
+            font-size: larger;
+            letter-spacing: 2px;
+        }
+        .add a{
+            color: white;
+            
+        }
+        .related-searches ul{
+            display: grid;
+            list-style: none;
+            grid-template-columns: 10% repeat(8, 5%);
+            padding: 0;
+            
+        }
+        .related-searches a{
+            text-decoration: none;
+            color: gray;
+        }
+        .related-searches a:hover{
+            text-decoration:overline;
+            color: black;
+
+        }
+        .content{
+            margin: 25px 50px;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        /* .grid-container div{
+            border: 1px solid;
+            height: 500px;
+        } */
+        .warning{
+            color: red;
+        }
+        .product-details p{
+            margin: 0;
+            padding-left: 0;
+            
+        }
+        .price{
+            padding-bottom: 10px;
+        }
+        .sticky{
+            position: sticky;
+            top: 1px;
+            padding: 10px 0;
+            margin: 10px 0;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            background-color: white;
+            font-size: larger;
+            
+        }
+        .sticky a{
+            display: flex;
+            color: black;
+            text-decoration: none;
+            align-items: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="above-header"></div>
+            <header>
+                <div class="search-bar">
+                    
+                    <input type="text" id="search-input"placeholder="What can we help you find?">
+                </div>
+                <div class="logo">
+                    <img src="https://www.stpaulcollection.com/wp-content/uploads/2018/11/st-paul-collection-amenities-cb2.png" alt="" width="75px">
+                </div>
+                <div class="icons">
+                    <div class="account icon1">
+                        <img src="https://as1.ftcdn.net/v2/jpg/03/16/12/52/1000_F_316125289_3GTL3Yd9JVQz3Nw50uAEEkOpX6GvK0LE.jpg" alt="" width="30px">
+                    </div>
+                    <div class="store icon2">
+                        <img src="https://as1.ftcdn.net/v2/jpg/03/16/12/52/1000_F_316125289_3GTL3Yd9JVQz3Nw50uAEEkOpX6GvK0LE.jpg" alt=""width="30px">
+                    </div>
+                    <div class="favorite icon3">
+                        <img src="https://as1.ftcdn.net/v2/jpg/03/16/12/52/1000_F_316125289_3GTL3Yd9JVQz3Nw50uAEEkOpX6GvK0LE.jpg" alt=""width="30px">
+                    </div>
+                    <div class="cart icon4">
+                        <img src="https://as1.ftcdn.net/v2/jpg/03/16/12/52/1000_F_316125289_3GTL3Yd9JVQz3Nw50uAEEkOpX6GvK0LE.jpg" alt=""width="30px">
+                    </div>
+                </div>
+            </header>
+            <nav class="upper-nav">
+                <p>
+                    <a href="">COLLECTIONS</a>|<a href="">FREE DESIGN SERVICES</a>|<a href="">TRADE PROGRAMS</a>|<a href="">GIFT REGISTRY</a>
+                </p>
+            </nav>
+            <nav class="lower-nav">
+                <ul>
+                    <li><a href="">WAREHOUSE SALE</a> </li>
+                    <li><a href="">NEW</a> </li>
+                    <li><a href="">FURNITURE</a> </li>
+                    <li><a href="">OUTDOOR</a> </li>
+                    <li><a href="">DECOR & MIRRORS</a> </li>
+                    <li><a href="">LIGHTING</a> </li>
+                    <li><a href="">PILLOWS & THROWS</a> </li>
+                    <li><a href="">RUGS</a> </li>
+                    <li><a href="">KITCHEN & DINING</a> </li>
+                    <li><a href="">BEDDING & BATH</a></li>
+                    <li><a href="">GIFTS</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="add">
+           <p>First Ever Warehouse Sale: Up to 60% Off&nbsp;&nbsp;</p> 
+           <a href="">SHOP NOW</a>
+        </div>
+
+        <div class="content">
+            <div class="search-results">
+                <p>12 SEARCH RESULTS FOR</p>
+                <h1>PLAIN OLD OVERPRICED SOFAS</h1>
+                <div class="related-searches">
+                    <ul>
+                        <li>RELATED SEARCHES:</li>
+                        <li><a href="">related01</a></li>
+                        <li><a href="">related02</a></li>
+                        <li><a href="">related03</a></li>
+                        <li><a href="">related04</a></li>
+                        <li><a href="">related05</a></li>
+                        <li><a href="">related06</a></li>
+                        <li><a href="">related07</a></li>
+                        <li><a href="">related08</a></li>
+                    </ul>
+            </div>
+
+            
+            <div class="sticky">
+                <a href="">
+                    <p>FILTER</p>
+                    <img src="https://w7.pngwing.com/pngs/403/20/png-transparent-computer-icons-filter-miscellaneous-angle-rectangle-thumbnail.png" alt="" width="15px" height="15px">
+            </a>
+                <p>12 ITEMS</p>
+            </div>
+            <div class="grid-container">
+                <div>
+                    <div class="product-img">
+                        <img src="https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202303/0867/carmel-square-wide-arm-leather-sofa-6-c.jpg" alt="" width="100%">
+                        <div class="product-details">
+                            <p>PLAIN OLD SOFA 1</p>
+                            <p class="price">$100,000.0</p>
+                            <p class="warning"><span>DONT BUY THIS ONE!!!</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product-img">
+                        <img src="https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202303/0867/carmel-square-wide-arm-leather-sofa-6-c.jpg" alt="" width="100%">
+                        <div class="product-details">
+                            <p>PLAIN OLD SOFA 2</p>
+                            <p class="price">$100,000.0</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div>
+                     <div class="product-img">
+                        <img src="https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202303/0867/carmel-square-wide-arm-leather-sofa-6-c.jpg" alt="" width="100%">
+                        <div class="product-details">
+                            <p>PLAIN OLD SOFA 3</p>
+                            <p class="price">$100,000.0</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div>
+                     <div class="product-img">
+                        <img src="https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202303/0867/carmel-square-wide-arm-leather-sofa-6-c.jpg" alt="" width="100%">
+                        <div class="product-details">
+                            <p>PLAIN OLD SOFA 4</p>
+                            <p class="price">$100,000.0</p>
+                            <p class="warning">SALE? YEAH THATS NOT GONNA HAPPEN</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                     <div class="product-img">
+                        <img src="https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202303/0867/carmel-square-wide-arm-leather-sofa-6-c.jpg" alt="" width="100%">
+                        <div class="product-details">
+                            <p>PLAIN OLD SOFA 5</p>
+                            <p class="price">$100,000.0</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div>
+                     <div class="product-img">
+                        <img src="https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202303/0867/carmel-square-wide-arm-leather-sofa-6-c.jpg" alt="" width="100%">
+                        <div class="product-details">
+                            <p>PLAIN OLD SOFA 6</p>
+                            <p class="price">$100,000.0</p>
+                            <p class="warning">WAAAAY TOO OVER OVERPRICED</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                     <div class="product-img">
+                        <img src="https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202303/0867/carmel-square-wide-arm-leather-sofa-6-c.jpg" alt="" width="100%">
+                        <div class="product-details">
+                            <p>PLAIN OLD SOFA 7</p>
+                            <p class="price">$100,000.0</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                     <div class="product-img">
+                        <img src="https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202303/0867/carmel-square-wide-arm-leather-sofa-6-c.jpg" alt="" width="100%">
+                        <div class="product-details">
+                            <p>PLAIN OLD SOFA 8</p>
+                            <p class="price">$100,000.0</p>
+                            <p class="warning">TRAAAAASH!!!</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                     <div class="product-img">
+                        <img src="https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202303/0867/carmel-square-wide-arm-leather-sofa-6-c.jpg" alt="" width="100%">
+                        <div class="product-details">
+                            <p>PLAIN OLD SOFA 9</p>
+                            <p class="price">$100,000.0</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                     <div class="product-img">
+                        <img src="https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202303/0867/carmel-square-wide-arm-leather-sofa-6-c.jpg" alt="" width="100%">
+                        <div class="product-details">
+                            <p>PLAIN OLD SOFA 10</p>
+                            <p class="price">$100,000.0</p>
+                            <p class="warning">YEAAH THIS ONE SUCKS!!!</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                     <div class="product-img">
+                        <img src="https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202303/0867/carmel-square-wide-arm-leather-sofa-6-c.jpg" alt="" width="100%">
+                        <div class="product-details">
+                            <p>PLAIN OLD SOFA 11</p>
+                            <p class="price">$100,000.0</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                     <div class="product-img">
+                        <img src="https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202303/0867/carmel-square-wide-arm-leather-sofa-6-c.jpg" alt="" width="100%">
+                        <div class="product-details">
+                            <p>PLAIN OLD SOFA 12</p>
+                            <p class="price">$100,000.0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+        
+            
+        </div>
+        
+    </div>
+
+</html>
